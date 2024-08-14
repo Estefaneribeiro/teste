@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estefane Ribeiro - Personal Trainer Vegana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #d4a5e4; /* Lilás suave */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about, .services, .contact {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2, .services h2, .contact h2 {
+            color: #6a5acd; /* Azul suave */
+        }
+
+        .about p, .services p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #eaf4fc; /* Azul claro */
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .contact input, .contact textarea {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact input[type="submit"] {
+            margin-top: 20px;
+            background-color: #98fb98; /* Verde suave */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact input[type="submit"]:hover {
+            background-color: #7ed57e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Estefane Ribeiro</h1>
+        <nav>
+            <a href="#about">Sobre Mim</a>
+            <a href="#services">Serviços</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou a Estefane Ribeiro, personal trainer e vegana apaixonada por promover saúde, bem-estar e qualidade de vida. Com anos de experiência em academias e condomínios de Belo Horizonte, ajudo meus clientes a atingirem seus objetivos físicos de maneira saudável e sustentável, sempre respeitando o corpo e a natureza.</p>
+            <p>Acredito que o equilíbrio entre treino, alimentação e mente é essencial para uma vida plena. Venha comigo nessa jornada para transformar sua vida!</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Serviços</h2>
+            <ul>
+                <li><strong>Treinamento Personalizado:</strong> Programas de treino específicos para suas necessidades e objetivos.</li>
+                <li><strong>Consultoria em Alimentação Vegana:</strong> Dicas e orientações para uma dieta vegana equilibrada e nutritiva.</li>
+                <li><strong>Qualidade de Vida:</strong> Estratégias para melhorar seu bem-estar físico e mental.</li>
+                <li><strong>Acompanhamento Contínuo:</strong> Suporte constante para garantir que você se mantenha motivado e no caminho certo.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Estefane Ribeiro. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
